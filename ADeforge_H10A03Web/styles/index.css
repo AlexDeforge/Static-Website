@@ -1,0 +1,198 @@
+:root {
+    --main-bg-color: rgb(255, 0, 0);
+    --main-bg-font-size: 150%;
+    --main-bg-padding: 14%;
+    --main-bg-padding-margin: 0px;
+    --main-bg-background: white;
+}
+#logo {
+    font-family: "freestyle script", sans-serif;
+    float: left;
+    font-size: var(--main-bg-font-size);
+    color: var(--main-bg-color);
+    background-color: white;
+    border: solid;
+    transform: rotateZ(2deg);
+}
+body {
+    background-color: rgb(253, 231, 231);
+}
+h1 {
+    color:rgb(255, 0, 0);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 350%;
+    padding-bottom: 30px;
+    text-shadow: -2px -2px 10px #fff,
+    2px 2px 10px #fff,	
+   0px 0px 20px rgb(255, 57, 57),
+    0px 0px 40px  rgb(255, 57, 57);
+}
+
+p {
+    padding-top: 25px;
+    padding-left: var(--main-bg-padding);;
+    padding-right: var(--main-bg-padding);
+    font-size: 110%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul {
+    list-style-type: none;
+    padding: var(--main-bg-padding-margin);
+    margin: var(--main-bg-padding-margin);
+}
+nav ul li { 
+    background-color: var(--main-bg-background);
+    display: inline-block;
+    padding: 8px 20px;
+    margin: 3px 0px;
+    border-radius: 7px;
+}
+li a {
+    text-decoration: none;
+    color: red;
+    margin: auto;
+}
+nav {
+    font-weight: lighter;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 120%;
+}
+div img {
+    width: 100%;
+}
+img { 
+    width: 40%;
+    text-align: center;
+    padding: 1.5vw;
+}
+img a {
+    width: 40%;
+    text-align: center;
+    padding: 1.5vw;
+}
+#newspice {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+p a {
+    margin: auto;
+    text-decoration: underline;
+    color: rgb(5, 5, 150);
+}
+.font125 {
+    font-size: 125%;
+}
+.mainatags{
+    background-image: url("../images/offsite_arrow.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 14px auto;
+    padding-right: 24px;
+    border: solid 1px grey;
+    border-radius: 7px;
+    font-size: 80%;  
+}
+.mainli {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 4px;
+    margin: 3px 0px;
+    font-size: 110%;
+}
+.feildset {
+    display: inline-block;
+}
+.form {
+    text-align: center;
+}
+.div {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    margin-right: 20%;
+    margin-left: 25%;
+    padding-left: 10px;
+}
+main {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    margin-right: 25%;
+    margin-left: 30%;
+}
+.paddingtop {
+    margin-top: 33px;
+}
+.grid {
+    display: grid;
+    grid-auto-columns: auto;
+    grid-auto-rows: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tableprices {
+    padding: 3px;
+    border: solid 1px #000;
+    font-weight: bold 1.1em;
+    text-align: center;
+}
+.tdandth {
+    padding: 3px;
+    border: solid 1px #000;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.floatright{
+    float: right;
+}
+.floatleft{
+    float: left;
+    max-width: 500px;
+}
+.centered {
+    text-align: center;
+}
+@media all and (min-width: 768px) {
+    h1 {
+        font-size: 300%;
+    }
+    #logo {
+        font-size: 200%;
+    }
+    .link a:hover {
+        color: crimson;
+        background-color: var(--main-bg-background);
+        text-decoration: underline;
+        border: none;
+   }
+   .gone {
+        pointer-events: none;
+        cursor: default;
+    }
+    .hidetext {
+        color: black;
+        text-decoration: none;
+    }
+}
+@media all and (max-width: 768px){
+    .blackOut {
+        display: none;
+    }
+    .bye {
+        pointer-events: none;
+        cursor: default;
+    }
+    .hidentext {
+        text-decoration: none;
+        color: black;
+    }
+}
